@@ -1,617 +1,207 @@
-2025-04-26 19:17:02,125 - api.bybit_api - INFO - Bybit API initialized (testnet: True)
-2025-04-26 19:17:02,125 - api.bybit_api - INFO - Bybit API session created successfully
-2025-04-26 19:17:02,126 - api.bybit_api - INFO - Hole alle verfügbaren Symbole für Kategorie: linear
-2025-04-26 19:17:02,126 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear'}
-2025-04-26 19:17:02,682 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:17:02,682 - api.bybit_api - DEBUG - API call get_instruments_info successful in 555.54ms
-2025-04-26 19:17:02,683 - api.bybit_api - INFO - 500 Symbole erfolgreich abgerufen
-2025-04-26 19:17:03,417 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000000AIDOGEUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:03,778 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:03,779 - api.bybit_api - DEBUG - API response for 10000000AIDOGEUSDT (15) received
-2025-04-26 19:17:03,784 - api.bybit_api - DEBUG - Candle data for 10000000AIDOGEUSDT (15) saved to cache
-2025-04-26 19:17:04,578 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000BABYDOGEUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:05,308 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:05,309 - api.bybit_api - DEBUG - API response for 1000000BABYDOGEUSDT (15) received
-2025-04-26 19:17:05,312 - api.bybit_api - DEBUG - Candle data for 1000000BABYDOGEUSDT (15) saved to cache
-2025-04-26 19:17:06,113 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000CHEEMSUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:06,808 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:06,808 - api.bybit_api - DEBUG - API response for 1000000CHEEMSUSDT (15) received
-2025-04-26 19:17:06,812 - api.bybit_api - DEBUG - Candle data for 1000000CHEEMSUSDT (15) saved to cache
-2025-04-26 19:17:07,557 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000MOGUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:08,098 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:08,098 - api.bybit_api - DEBUG - API response for 1000000MOGUSDT (15) received
-2025-04-26 19:17:08,101 - api.bybit_api - DEBUG - Candle data for 1000000MOGUSDT (15) saved to cache
-2025-04-26 19:17:08,893 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000PEIPEIUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:09,258 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:09,259 - api.bybit_api - DEBUG - API response for 1000000PEIPEIUSDT (15) received
-2025-04-26 19:17:09,262 - api.bybit_api - DEBUG - Candle data for 1000000PEIPEIUSDT (15) saved to cache
-2025-04-26 19:17:10,039 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000COQUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:10,784 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:10,784 - api.bybit_api - DEBUG - API response for 10000COQUSDT (15) received
-2025-04-26 19:17:10,788 - api.bybit_api - DEBUG - Candle data for 10000COQUSDT (15) saved to cache
-2025-04-26 19:17:11,586 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000ELONUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:12,633 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:12,634 - api.bybit_api - DEBUG - API response for 10000ELONUSDT (15) received
-2025-04-26 19:17:12,637 - api.bybit_api - DEBUG - Candle data for 10000ELONUSDT (15) saved to cache
-2025-04-26 19:17:13,423 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000LADYSUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:13,780 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:13,780 - api.bybit_api - DEBUG - API response for 10000LADYSUSDT (15) received
-2025-04-26 19:17:13,784 - api.bybit_api - DEBUG - Candle data for 10000LADYSUSDT (15) saved to cache
-2025-04-26 19:17:14,918 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000QUBICUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:15,273 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:15,273 - api.bybit_api - DEBUG - API response for 10000QUBICUSDT (15) received
-2025-04-26 19:17:15,276 - api.bybit_api - DEBUG - Candle data for 10000QUBICUSDT (15) saved to cache
-2025-04-26 19:17:16,055 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000SATSUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:16,413 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:16,414 - api.bybit_api - DEBUG - API response for 10000SATSUSDT (15) received
-2025-04-26 19:17:16,417 - api.bybit_api - DEBUG - Candle data for 10000SATSUSDT (15) saved to cache
-2025-04-26 19:17:20,203 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000WENUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:20,918 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:20,919 - api.bybit_api - DEBUG - API response for 10000WENUSDT (15) received
-2025-04-26 19:17:20,922 - api.bybit_api - DEBUG - Candle data for 10000WENUSDT (15) saved to cache
-2025-04-26 19:17:21,763 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000WHYUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:22,129 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:22,129 - api.bybit_api - DEBUG - API response for 10000WHYUSDT (15) received
-2025-04-26 19:17:22,132 - api.bybit_api - DEBUG - Candle data for 10000WHYUSDT (15) saved to cache
-2025-04-26 19:17:22,911 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000APUUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:23,274 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:23,275 - api.bybit_api - DEBUG - API response for 1000APUUSDT (15) received
-2025-04-26 19:17:23,278 - api.bybit_api - DEBUG - Candle data for 1000APUUSDT (15) saved to cache
-2025-04-26 19:17:24,053 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000BONKPERP', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:24,403 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:24,403 - api.bybit_api - DEBUG - API response for 1000BONKPERP (15) received
-2025-04-26 19:17:24,407 - api.bybit_api - DEBUG - Candle data for 1000BONKPERP (15) saved to cache
-2025-04-26 19:17:25,192 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000BONKUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:25,557 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:25,558 - api.bybit_api - DEBUG - API response for 1000BONKUSDT (15) received
-2025-04-26 19:17:25,561 - api.bybit_api - DEBUG - Candle data for 1000BONKUSDT (15) saved to cache
-2025-04-26 19:17:26,332 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000BTTUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:26,694 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:26,695 - api.bybit_api - DEBUG - API response for 1000BTTUSDT (15) received
-2025-04-26 19:17:26,699 - api.bybit_api - DEBUG - Candle data for 1000BTTUSDT (15) saved to cache
-2025-04-26 19:17:27,819 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000CATSUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:28,172 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:28,172 - api.bybit_api - DEBUG - API response for 1000CATSUSDT (15) received
-2025-04-26 19:17:28,176 - api.bybit_api - DEBUG - Candle data for 1000CATSUSDT (15) saved to cache
-2025-04-26 19:17:28,958 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000CATUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:29,328 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:29,328 - api.bybit_api - DEBUG - API response for 1000CATUSDT (15) received
-2025-04-26 19:17:29,331 - api.bybit_api - DEBUG - Candle data for 1000CATUSDT (15) saved to cache
-2025-04-26 19:17:30,102 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000FLOKIUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:30,818 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:30,818 - api.bybit_api - DEBUG - API response for 1000FLOKIUSDT (15) received
-2025-04-26 19:17:30,822 - api.bybit_api - DEBUG - Candle data for 1000FLOKIUSDT (15) saved to cache
-2025-04-26 19:17:31,633 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000LUNCUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:32,008 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:32,008 - api.bybit_api - DEBUG - API response for 1000LUNCUSDT (15) received
-2025-04-26 19:17:32,011 - api.bybit_api - DEBUG - Candle data for 1000LUNCUSDT (15) saved to cache
-2025-04-26 19:17:35,781 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000MUMUUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:36,139 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:36,140 - api.bybit_api - DEBUG - API response for 1000MUMUUSDT (15) received
-2025-04-26 19:17:36,143 - api.bybit_api - DEBUG - Candle data for 1000MUMUUSDT (15) saved to cache
-2025-04-26 19:17:36,921 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000NEIROCTOUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:37,296 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:37,297 - api.bybit_api - DEBUG - API response for 1000NEIROCTOUSDT (15) received
-2025-04-26 19:17:37,300 - api.bybit_api - DEBUG - Candle data for 1000NEIROCTOUSDT (15) saved to cache
-2025-04-26 19:17:38,414 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000PEPEPERP', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:38,850 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:38,850 - api.bybit_api - DEBUG - API response for 1000PEPEPERP (15) received
-2025-04-26 19:17:38,853 - api.bybit_api - DEBUG - Candle data for 1000PEPEPERP (15) saved to cache
-2025-04-26 19:17:39,661 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000PEPEUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:40,043 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:40,043 - api.bybit_api - DEBUG - API response for 1000PEPEUSDT (15) received
-2025-04-26 19:17:40,046 - api.bybit_api - DEBUG - Candle data for 1000PEPEUSDT (15) saved to cache
-2025-04-26 19:17:40,801 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000RATSUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:41,857 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:41,857 - api.bybit_api - DEBUG - API response for 1000RATSUSDT (15) received
-2025-04-26 19:17:41,862 - api.bybit_api - DEBUG - Candle data for 1000RATSUSDT (15) saved to cache
-2025-04-26 19:17:42,651 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000TOSHIUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:43,022 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:43,023 - api.bybit_api - DEBUG - API response for 1000TOSHIUSDT (15) received
-2025-04-26 19:17:43,026 - api.bybit_api - DEBUG - Candle data for 1000TOSHIUSDT (15) saved to cache
-2025-04-26 19:17:44,125 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000TURBOUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:44,663 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:44,664 - api.bybit_api - DEBUG - API response for 1000TURBOUSDT (15) received
-2025-04-26 19:17:44,668 - api.bybit_api - DEBUG - Candle data for 1000TURBOUSDT (15) saved to cache
-2025-04-26 19:17:45,470 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000XECUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:46,512 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:46,513 - api.bybit_api - DEBUG - API response for 1000XECUSDT (15) received
-2025-04-26 19:17:46,517 - api.bybit_api - DEBUG - Candle data for 1000XECUSDT (15) saved to cache
-2025-04-26 19:17:47,297 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000XUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:48,353 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:48,353 - api.bybit_api - DEBUG - API response for 1000XUSDT (15) received
-2025-04-26 19:17:48,356 - api.bybit_api - DEBUG - Candle data for 1000XUSDT (15) saved to cache
-2025-04-26 19:17:49,142 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1INCHUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:49,837 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:49,838 - api.bybit_api - DEBUG - API response for 1INCHUSDT (15) received
-2025-04-26 19:17:49,841 - api.bybit_api - DEBUG - Candle data for 1INCHUSDT (15) saved to cache
-2025-04-26 19:17:53,583 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'A8USDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:54,288 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:54,289 - api.bybit_api - DEBUG - API response for A8USDT (15) received
-2025-04-26 19:17:54,292 - api.bybit_api - DEBUG - Candle data for A8USDT (15) saved to cache
-2025-04-26 19:17:55,128 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AAVEUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:55,482 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:55,483 - api.bybit_api - DEBUG - API response for AAVEUSDT (15) received
-2025-04-26 19:17:55,486 - api.bybit_api - DEBUG - Candle data for AAVEUSDT (15) saved to cache
-2025-04-26 19:17:56,281 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACEUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:56,658 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:56,658 - api.bybit_api - DEBUG - API response for ACEUSDT (15) received
-2025-04-26 19:17:56,663 - api.bybit_api - DEBUG - Candle data for ACEUSDT (15) saved to cache
-2025-04-26 19:17:57,776 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACHUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:58,132 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:58,133 - api.bybit_api - DEBUG - API response for ACHUSDT (15) received
-2025-04-26 19:17:58,136 - api.bybit_api - DEBUG - Candle data for ACHUSDT (15) saved to cache
-2025-04-26 19:17:58,911 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACTUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:17:59,277 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:17:59,278 - api.bybit_api - DEBUG - API response for ACTUSDT (15) received
-2025-04-26 19:17:59,281 - api.bybit_api - DEBUG - Candle data for ACTUSDT (15) saved to cache
-2025-04-26 19:18:00,051 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACXUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:00,773 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:00,774 - api.bybit_api - DEBUG - API response for ACXUSDT (15) received
-2025-04-26 19:18:00,777 - api.bybit_api - DEBUG - Candle data for ACXUSDT (15) saved to cache
-2025-04-26 19:18:01,936 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ADAUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:02,292 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:02,293 - api.bybit_api - DEBUG - API response for ADAUSDT (15) received
-2025-04-26 19:18:02,296 - api.bybit_api - DEBUG - Candle data for ADAUSDT (15) saved to cache
-2025-04-26 19:18:03,085 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AERGOUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:04,218 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:04,218 - api.bybit_api - DEBUG - API response for AERGOUSDT (15) received
-2025-04-26 19:18:04,221 - api.bybit_api - DEBUG - Candle data for AERGOUSDT (15) saved to cache
-2025-04-26 19:18:05,398 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AEROUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:05,832 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:05,832 - api.bybit_api - DEBUG - API response for AEROUSDT (15) received
-2025-04-26 19:18:05,835 - api.bybit_api - DEBUG - Candle data for AEROUSDT (15) saved to cache
-2025-04-26 19:18:06,643 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AEVOPERP', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:07,076 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:07,077 - api.bybit_api - DEBUG - API response for AEVOPERP (15) received
-2025-04-26 19:18:07,080 - api.bybit_api - DEBUG - Candle data for AEVOPERP (15) saved to cache
-2025-04-26 19:18:11,222 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AEVOUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:12,241 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:12,242 - api.bybit_api - DEBUG - API response for AEVOUSDT (15) received
-2025-04-26 19:18:12,245 - api.bybit_api - DEBUG - Candle data for AEVOUSDT (15) saved to cache
-2025-04-26 19:18:13,426 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AGIUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:14,457 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:14,457 - api.bybit_api - DEBUG - API response for AGIUSDT (15) received
-2025-04-26 19:18:14,463 - api.bybit_api - DEBUG - Candle data for AGIUSDT (15) saved to cache
-2025-04-26 19:18:15,274 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AGLDUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:15,999 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:15,999 - api.bybit_api - DEBUG - API response for AGLDUSDT (15) received
-2025-04-26 19:18:16,003 - api.bybit_api - DEBUG - Candle data for AGLDUSDT (15) saved to cache
-2025-04-26 19:18:16,822 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AI16ZUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:17,242 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:17,242 - api.bybit_api - DEBUG - API response for AI16ZUSDT (15) received
-2025-04-26 19:18:17,245 - api.bybit_api - DEBUG - Candle data for AI16ZUSDT (15) saved to cache
-2025-04-26 19:18:18,055 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AIOZUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:18,462 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:18,463 - api.bybit_api - DEBUG - API response for AIOZUSDT (15) received
-2025-04-26 19:18:18,466 - api.bybit_api - DEBUG - Candle data for AIOZUSDT (15) saved to cache
-2025-04-26 19:18:19,647 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AIUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:20,370 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:20,371 - api.bybit_api - DEBUG - API response for AIUSDT (15) received
-2025-04-26 19:18:20,374 - api.bybit_api - DEBUG - Candle data for AIUSDT (15) saved to cache
-2025-04-26 19:18:21,183 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AIXBTUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:21,889 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:21,889 - api.bybit_api - DEBUG - API response for AIXBTUSDT (15) received
-2025-04-26 19:18:21,892 - api.bybit_api - DEBUG - Candle data for AIXBTUSDT (15) saved to cache
-2025-04-26 19:18:22,720 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AKTUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:23,132 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:23,133 - api.bybit_api - DEBUG - API response for AKTUSDT (15) received
-2025-04-26 19:18:23,137 - api.bybit_api - DEBUG - Candle data for AKTUSDT (15) saved to cache
-2025-04-26 19:18:23,959 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ALCHUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:24,663 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:24,663 - api.bybit_api - DEBUG - API response for ALCHUSDT (15) received
-2025-04-26 19:18:24,667 - api.bybit_api - DEBUG - Candle data for ALCHUSDT (15) saved to cache
-2025-04-26 19:18:25,497 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ALEOUSDT', 'interval': '15', 'limit': 1000}
-2025-04-26 19:18:26,217 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:18:26,218 - api.bybit_api - DEBUG - API response for ALEOUSDT (15) received
-2025-04-26 19:18:26,221 - api.bybit_api - DEBUG - Candle data for ALEOUSDT (15) saved to cache
-2025-04-26 19:18:26,305 - api.bybit_api - INFO - Initializing Bybit API with Unified V5 endpoints...
-2025-04-26 19:18:26,305 - api.bybit_api - INFO - Time synchronizing with server...
-2025-04-26 19:18:26,305 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/time with params: {}
-2025-04-26 19:18:26,716 - api.bybit_api - DEBUG - API request successful: GET /v5/market/time
-2025-04-26 19:18:26,716 - api.bybit_api - INFO - Time synchronized with server. Offset: 1284 ms
-2025-04-26 19:18:26,717 - api.bybit_api - INFO - Validating API credentials...
-2025-04-26 19:18:26,717 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/account/info with params: {}
-2025-04-26 19:18:27,127 - api.bybit_api - DEBUG - API request successful: GET /v5/account/info
-2025-04-26 19:18:27,128 - api.bybit_api - WARNING - API credential validation failed: API key is invalid.
-2025-04-26 19:18:27,128 - api.bybit_api - WARNING - Continuing with limited functionality. Some API features may not work.
-2025-04-26 19:18:27,128 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/time with params: {}
-2025-04-26 19:18:27,536 - api.bybit_api - DEBUG - API request successful: GET /v5/market/time
-2025-04-26 19:18:27,537 - api.bybit_api - DEBUG - Server time: 1745687908000, Offset: 463 ms
-2025-04-26 19:18:27,537 - api.bybit_api - INFO - Successfully connected to Bybit API. Server time: 1745687908000
-2025-04-26 19:18:27,537 - api.bybit_api - INFO - Attempting to connect WebSocket (attempt 1/3)...
-2025-04-26 19:18:27,538 - api.bybit_api - INFO - Connecting to WebSocket API...
-2025-04-26 19:18:27,538 - api.bybit_api - INFO - Time synchronizing with server...
-2025-04-26 19:18:27,538 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/time with params: {}
-2025-04-26 19:18:27,940 - api.bybit_api - DEBUG - API request successful: GET /v5/market/time
-2025-04-26 19:18:27,941 - api.bybit_api - INFO - Time synchronized with server. Offset: 1059 ms
-2025-04-26 19:18:27,942 - api.bybit_api - INFO - Using pybit version: unknown
-2025-04-26 19:18:27,942 - api.bybit_api - ERROR - Error creating WebSocket connection: cannot access local variable 'time' where it is not associated with a value
-2025-04-26 19:18:27,943 - api.bybit_api - ERROR - Traceback: Traceback (most recent call last):
-  File "C:\Users\Doktor\Desktop\Bybit\main\api\bybit_api.py", line 439, in connect_ws
-    expires = int(time.time() * 1000) + self.time_offset + 10000  # 10 seconds expiry
-                  ^^^^
-UnboundLocalError: cannot access local variable 'time' where it is not associated with a value
-
-2025-04-26 19:18:27,943 - api.bybit_api - WARNING - WebSocket connection attempt 1/3 failed
-2025-04-26 19:18:30,945 - api.bybit_api - INFO - Attempting to connect WebSocket (attempt 2/3)...
-2025-04-26 19:18:30,945 - api.bybit_api - INFO - Connecting to WebSocket API...
-2025-04-26 19:18:30,946 - api.bybit_api - INFO - Time synchronizing with server...
-2025-04-26 19:18:30,946 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/time with params: {}
-2025-04-26 19:18:31,362 - api.bybit_api - DEBUG - API request successful: GET /v5/market/time
-2025-04-26 19:18:31,363 - api.bybit_api - INFO - Time synchronized with server. Offset: 637 ms
-2025-04-26 19:18:31,364 - api.bybit_api - INFO - Using pybit version: unknown
-2025-04-26 19:18:31,364 - api.bybit_api - ERROR - Error creating WebSocket connection: cannot access local variable 'time' where it is not associated with a value
-2025-04-26 19:18:31,365 - api.bybit_api - ERROR - Traceback: Traceback (most recent call last):
-  File "C:\Users\Doktor\Desktop\Bybit\main\api\bybit_api.py", line 439, in connect_ws
-    expires = int(time.time() * 1000) + self.time_offset + 10000  # 10 seconds expiry
-                  ^^^^
-UnboundLocalError: cannot access local variable 'time' where it is not associated with a value
-
-2025-04-26 19:18:31,365 - api.bybit_api - WARNING - WebSocket connection attempt 2/3 failed
-2025-04-26 19:18:34,366 - api.bybit_api - INFO - Attempting to connect WebSocket (attempt 3/3)...
-2025-04-26 19:18:34,366 - api.bybit_api - INFO - Connecting to WebSocket API...
-2025-04-26 19:18:34,367 - api.bybit_api - INFO - Time synchronizing with server...
-2025-04-26 19:18:34,367 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/time with params: {}
-2025-04-26 19:18:34,778 - api.bybit_api - DEBUG - API request successful: GET /v5/market/time
-2025-04-26 19:18:34,779 - api.bybit_api - INFO - Time synchronized with server. Offset: 1221 ms
-2025-04-26 19:18:34,779 - api.bybit_api - INFO - Using pybit version: unknown
-2025-04-26 19:18:34,779 - api.bybit_api - ERROR - Error creating WebSocket connection: cannot access local variable 'time' where it is not associated with a value
-2025-04-26 19:18:34,781 - api.bybit_api - ERROR - Traceback: Traceback (most recent call last):
-  File "C:\Users\Doktor\Desktop\Bybit\main\api\bybit_api.py", line 439, in connect_ws
-    expires = int(time.time() * 1000) + self.time_offset + 10000  # 10 seconds expiry
-                  ^^^^
-UnboundLocalError: cannot access local variable 'time' where it is not associated with a value
-
-2025-04-26 19:18:34,781 - api.bybit_api - WARNING - WebSocket connection attempt 3/3 failed
-2025-04-26 19:18:34,781 - api.bybit_api - WARNING - Failed to connect to WebSocket API. Some real-time features will be disabled.
-2025-04-26 19:18:34,782 - api.bybit_api - INFO - Managing cache files (max age: 7 days, max size: 2000 MB)
-2025-04-26 19:18:34,785 - api.bybit_api - INFO - Cache cleanup: removed 0 files, freed 0.00 MB
-2025-04-26 19:18:34,785 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/time with params: {}
-2025-04-26 19:18:35,177 - api.bybit_api - DEBUG - API request successful: GET /v5/market/time
-2025-04-26 19:18:35,178 - api.bybit_api - DEBUG - Server time: 1745687916000, Offset: 822 ms
-2025-04-26 19:18:35,179 - api.bybit_api - INFO - Managing cache files (max age: 7 days, max size: 2000 MB)
-2025-04-26 19:18:35,182 - api.bybit_api - INFO - Cache cleanup: removed 0 files, freed 0.00 MB
-2025-04-26 19:18:35,182 - api.bybit_api - INFO - Hole alle verfügbaren Symbole für Kategorie: linear
-2025-04-26 19:18:35,183 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear'}
-2025-04-26 19:18:35,474 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:35,474 - api.bybit_api - DEBUG - API call get_instruments_info successful in 291.57ms
-2025-04-26 19:18:35,475 - api.bybit_api - INFO - 500 Symbole erfolgreich abgerufen
-2025-04-26 19:18:47,966 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AIXBTUSDT'}
-2025-04-26 19:18:48,201 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:48,201 - api.bybit_api - DEBUG - API call get_instruments_info successful in 234.73ms
-2025-04-26 19:18:48,202 - api.bybit_api - DEBUG - Using cached candle data for AIXBTUSDT (15), age: 0.0h
-2025-04-26 19:18:48,213 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AIXBTUSDT'}
-2025-04-26 19:18:48,605 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:48,606 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AEVOPERP'}
-2025-04-26 19:18:48,832 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:48,832 - api.bybit_api - DEBUG - API call get_instruments_info successful in 226.01ms
-2025-04-26 19:18:48,833 - api.bybit_api - DEBUG - Using cached candle data for AEVOPERP (15), age: 0.0h
-2025-04-26 19:18:48,843 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AEVOPERP'}
-2025-04-26 19:18:49,272 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:49,273 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000PEPEPERP'}
-2025-04-26 19:18:49,501 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:49,502 - api.bybit_api - DEBUG - API call get_instruments_info successful in 228.00ms
-2025-04-26 19:18:49,503 - api.bybit_api - DEBUG - Using cached candle data for 1000PEPEPERP (15), age: 0.0h
-2025-04-26 19:18:49,528 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000PEPEPERP'}
-2025-04-26 19:18:49,964 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:49,966 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AGIUSDT'}
-2025-04-26 19:18:50,196 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:50,196 - api.bybit_api - DEBUG - API call get_instruments_info successful in 229.62ms
-2025-04-26 19:18:50,197 - api.bybit_api - DEBUG - Using cached candle data for AGIUSDT (15), age: 0.0h
-2025-04-26 19:18:50,208 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AGIUSDT'}
-2025-04-26 19:18:50,644 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:50,645 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000XECUSDT'}
-2025-04-26 19:18:50,876 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:50,877 - api.bybit_api - DEBUG - API call get_instruments_info successful in 229.16ms
-2025-04-26 19:18:50,878 - api.bybit_api - DEBUG - Using cached candle data for 1000XECUSDT (15), age: 0.0h
-2025-04-26 19:18:50,890 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000XECUSDT'}
-2025-04-26 19:18:51,312 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:51,313 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000XUSDT'}
-2025-04-26 19:18:51,537 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:51,537 - api.bybit_api - DEBUG - API call get_instruments_info successful in 223.80ms
-2025-04-26 19:18:51,538 - api.bybit_api - DEBUG - Using cached candle data for 1000XUSDT (15), age: 0.0h
-2025-04-26 19:18:51,549 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000XUSDT'}
-2025-04-26 19:18:52,254 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:52,256 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000WHYUSDT'}
-2025-04-26 19:18:52,487 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:52,487 - api.bybit_api - DEBUG - API call get_instruments_info successful in 230.35ms
-2025-04-26 19:18:52,488 - api.bybit_api - DEBUG - Using cached candle data for 10000WHYUSDT (15), age: 0.0h
-2025-04-26 19:18:52,499 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000WHYUSDT'}
-2025-04-26 19:18:52,905 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:52,907 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000BONKUSDT'}
-2025-04-26 19:18:53,145 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:53,146 - api.bybit_api - DEBUG - API call get_instruments_info successful in 238.26ms
-2025-04-26 19:18:53,147 - api.bybit_api - DEBUG - Using cached candle data for 1000BONKUSDT (15), age: 0.0h
-2025-04-26 19:18:53,166 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000BONKUSDT'}
-2025-04-26 19:18:53,570 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:53,571 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AIUSDT'}
-2025-04-26 19:18:54,146 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:54,147 - api.bybit_api - DEBUG - API call get_instruments_info successful in 573.83ms
-2025-04-26 19:18:54,148 - api.bybit_api - DEBUG - Using cached candle data for AIUSDT (15), age: 0.0h
-2025-04-26 19:18:54,158 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AIUSDT'}
-2025-04-26 19:18:54,553 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:54,554 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AKTUSDT'}
-2025-04-26 19:18:54,786 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:54,787 - api.bybit_api - DEBUG - API call get_instruments_info successful in 231.43ms
-2025-04-26 19:18:54,788 - api.bybit_api - DEBUG - Using cached candle data for AKTUSDT (15), age: 0.0h
-2025-04-26 19:18:54,799 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AKTUSDT'}
-2025-04-26 19:18:55,214 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:55,215 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000FLOKIUSDT'}
-2025-04-26 19:18:55,788 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:55,789 - api.bybit_api - DEBUG - API call get_instruments_info successful in 572.25ms
-2025-04-26 19:18:55,789 - api.bybit_api - DEBUG - Using cached candle data for 1000FLOKIUSDT (15), age: 0.0h
-2025-04-26 19:18:55,801 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000FLOKIUSDT'}
-2025-04-26 19:18:56,204 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:56,205 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000WENUSDT'}
-2025-04-26 19:18:56,786 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:56,787 - api.bybit_api - DEBUG - API call get_instruments_info successful in 579.96ms
-2025-04-26 19:18:56,788 - api.bybit_api - DEBUG - Using cached candle data for 10000WENUSDT (15), age: 0.0h
-2025-04-26 19:18:56,799 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000WENUSDT'}
-2025-04-26 19:18:57,214 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:57,215 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000TOSHIUSDT'}
-2025-04-26 19:18:57,476 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:57,476 - api.bybit_api - DEBUG - API call get_instruments_info successful in 259.99ms
-2025-04-26 19:18:57,477 - api.bybit_api - DEBUG - Using cached candle data for 1000TOSHIUSDT (15), age: 0.0h
-2025-04-26 19:18:57,491 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000TOSHIUSDT'}
-2025-04-26 19:18:57,898 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:57,899 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AEROUSDT'}
-2025-04-26 19:18:58,145 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:58,146 - api.bybit_api - DEBUG - API call get_instruments_info successful in 246.39ms
-2025-04-26 19:18:58,147 - api.bybit_api - DEBUG - Using cached candle data for AEROUSDT (15), age: 0.0h
-2025-04-26 19:18:58,157 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AEROUSDT'}
-2025-04-26 19:18:58,594 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:58,595 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'ACEUSDT'}
-2025-04-26 19:18:59,175 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:59,176 - api.bybit_api - DEBUG - API call get_instruments_info successful in 579.07ms
-2025-04-26 19:18:59,176 - api.bybit_api - DEBUG - Using cached candle data for ACEUSDT (15), age: 0.0h
-2025-04-26 19:18:59,208 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'ACEUSDT'}
-2025-04-26 19:18:59,607 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:18:59,608 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000RATSUSDT'}
-2025-04-26 19:18:59,856 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:18:59,856 - api.bybit_api - DEBUG - API call get_instruments_info successful in 247.19ms
-2025-04-26 19:18:59,857 - api.bybit_api - DEBUG - Using cached candle data for 1000RATSUSDT (15), age: 0.0h
-2025-04-26 19:18:59,869 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000RATSUSDT'}
-2025-04-26 19:19:00,281 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:00,283 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000COQUSDT'}
-2025-04-26 19:19:00,862 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:00,862 - api.bybit_api - DEBUG - API call get_instruments_info successful in 578.00ms
-2025-04-26 19:19:00,863 - api.bybit_api - DEBUG - Using cached candle data for 10000COQUSDT (15), age: 0.0h
-2025-04-26 19:19:00,874 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000COQUSDT'}
-2025-04-26 19:19:01,293 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:01,294 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000000PEIPEIUSDT'}
-2025-04-26 19:19:01,530 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:01,530 - api.bybit_api - DEBUG - API call get_instruments_info successful in 236.12ms
-2025-04-26 19:19:01,531 - api.bybit_api - DEBUG - Using cached candle data for 1000000PEIPEIUSDT (15), age: 0.0h
-2025-04-26 19:19:01,541 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000000PEIPEIUSDT'}
-2025-04-26 19:19:01,961 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:01,962 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000APUUSDT'}
-2025-04-26 19:19:02,200 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:02,200 - api.bybit_api - DEBUG - API call get_instruments_info successful in 237.37ms
-2025-04-26 19:19:02,201 - api.bybit_api - DEBUG - Using cached candle data for 1000APUUSDT (15), age: 0.0h
-2025-04-26 19:19:02,215 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000APUUSDT'}
-2025-04-26 19:19:02,617 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:02,618 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'ACTUSDT'}
-2025-04-26 19:19:02,852 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:02,852 - api.bybit_api - DEBUG - API call get_instruments_info successful in 234.72ms
-2025-04-26 19:19:02,853 - api.bybit_api - DEBUG - Using cached candle data for ACTUSDT (15), age: 0.0h
-2025-04-26 19:19:02,863 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'ACTUSDT'}
-2025-04-26 19:19:03,280 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:03,281 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AI16ZUSDT'}
-2025-04-26 19:19:03,509 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:03,509 - api.bybit_api - DEBUG - API call get_instruments_info successful in 226.77ms
-2025-04-26 19:19:03,510 - api.bybit_api - DEBUG - Using cached candle data for AI16ZUSDT (15), age: 0.0h
-2025-04-26 19:19:03,522 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AI16ZUSDT'}
-2025-04-26 19:19:04,226 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:04,227 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000000MOGUSDT'}
-2025-04-26 19:19:04,463 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:04,463 - api.bybit_api - DEBUG - API call get_instruments_info successful in 235.07ms
-2025-04-26 19:19:04,464 - api.bybit_api - DEBUG - Using cached candle data for 1000000MOGUSDT (15), age: 0.0h
-2025-04-26 19:19:04,477 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000000MOGUSDT'}
-2025-04-26 19:19:04,850 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:04,851 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000BONKPERP'}
-2025-04-26 19:19:05,086 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:05,086 - api.bybit_api - DEBUG - API call get_instruments_info successful in 234.99ms
-2025-04-26 19:19:05,087 - api.bybit_api - DEBUG - Using cached candle data for 1000BONKPERP (15), age: 0.0h
-2025-04-26 19:19:05,097 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000BONKPERP'}
-2025-04-26 19:19:05,797 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:05,798 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'ACXUSDT'}
-2025-04-26 19:19:06,375 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:06,375 - api.bybit_api - DEBUG - API call get_instruments_info successful in 576.44ms
-2025-04-26 19:19:06,376 - api.bybit_api - DEBUG - Using cached candle data for ACXUSDT (15), age: 0.0h
-2025-04-26 19:19:06,388 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'ACXUSDT'}
-2025-04-26 19:19:07,075 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:07,076 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000LUNCUSDT'}
-2025-04-26 19:19:07,311 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:07,312 - api.bybit_api - DEBUG - API call get_instruments_info successful in 233.83ms
-2025-04-26 19:19:07,313 - api.bybit_api - DEBUG - Using cached candle data for 1000LUNCUSDT (15), age: 0.0h
-2025-04-26 19:19:07,325 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000LUNCUSDT'}
-2025-04-26 19:19:07,671 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:07,672 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AGLDUSDT'}
-2025-04-26 19:19:07,899 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:07,900 - api.bybit_api - DEBUG - API call get_instruments_info successful in 226.58ms
-2025-04-26 19:19:07,900 - api.bybit_api - DEBUG - Using cached candle data for AGLDUSDT (15), age: 0.0h
-2025-04-26 19:19:07,911 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AGLDUSDT'}
-2025-04-26 19:19:08,255 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:08,256 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000ELONUSDT'}
-2025-04-26 19:19:08,481 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:08,481 - api.bybit_api - DEBUG - API call get_instruments_info successful in 225.91ms
-2025-04-26 19:19:08,482 - api.bybit_api - DEBUG - Using cached candle data for 10000ELONUSDT (15), age: 0.0h
-2025-04-26 19:19:08,494 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000ELONUSDT'}
-2025-04-26 19:19:08,845 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:08,846 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000BTTUSDT'}
-2025-04-26 19:19:09,073 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:09,073 - api.bybit_api - DEBUG - API call get_instruments_info successful in 226.77ms
-2025-04-26 19:19:09,074 - api.bybit_api - DEBUG - Using cached candle data for 1000BTTUSDT (15), age: 0.0h
-2025-04-26 19:19:09,086 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000BTTUSDT'}
-2025-04-26 19:19:09,439 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:09,440 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AIOZUSDT'}
-2025-04-26 19:19:09,668 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:09,668 - api.bybit_api - DEBUG - API call get_instruments_info successful in 227.87ms
-2025-04-26 19:19:09,669 - api.bybit_api - DEBUG - Using cached candle data for AIOZUSDT (15), age: 0.0h
-2025-04-26 19:19:09,679 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AIOZUSDT'}
-2025-04-26 19:19:10,036 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:10,037 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'ALEOUSDT'}
-2025-04-26 19:19:10,605 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:10,606 - api.bybit_api - DEBUG - API call get_instruments_info successful in 567.77ms
-2025-04-26 19:19:10,607 - api.bybit_api - DEBUG - Using cached candle data for ALEOUSDT (15), age: 0.0h
-2025-04-26 19:19:10,618 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'ALEOUSDT'}
-2025-04-26 19:19:10,959 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:10,960 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'ACHUSDT'}
-2025-04-26 19:19:11,187 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:11,187 - api.bybit_api - DEBUG - API call get_instruments_info successful in 226.31ms
-2025-04-26 19:19:11,188 - api.bybit_api - DEBUG - Using cached candle data for ACHUSDT (15), age: 0.0h
-2025-04-26 19:19:11,199 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'ACHUSDT'}
-2025-04-26 19:19:11,544 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:12,046 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'ALCHUSDT'}
-2025-04-26 19:19:12,637 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:12,637 - api.bybit_api - DEBUG - API call get_instruments_info successful in 591.06ms
-2025-04-26 19:19:12,638 - api.bybit_api - DEBUG - Using cached candle data for ALCHUSDT (15), age: 0.0h
-2025-04-26 19:19:12,648 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'ALCHUSDT'}
-2025-04-26 19:19:13,322 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:13,323 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000000AIDOGEUSDT'}
-2025-04-26 19:19:13,556 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:13,557 - api.bybit_api - DEBUG - API call get_instruments_info successful in 231.56ms
-2025-04-26 19:19:13,557 - api.bybit_api - DEBUG - Using cached candle data for 10000000AIDOGEUSDT (15), age: 0.0h
-2025-04-26 19:19:13,570 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000000AIDOGEUSDT'}
-2025-04-26 19:19:14,265 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:14,266 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000MUMUUSDT'}
-2025-04-26 19:19:14,843 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:14,843 - api.bybit_api - DEBUG - API call get_instruments_info successful in 575.19ms
-2025-04-26 19:19:14,844 - api.bybit_api - DEBUG - Using cached candle data for 1000MUMUUSDT (15), age: 0.0h
-2025-04-26 19:19:14,856 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000MUMUUSDT'}
-2025-04-26 19:19:15,217 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:15,218 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AAVEUSDT'}
-2025-04-26 19:19:15,456 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:15,456 - api.bybit_api - DEBUG - API call get_instruments_info successful in 238.19ms
-2025-04-26 19:19:15,457 - api.bybit_api - DEBUG - Using cached candle data for AAVEUSDT (15), age: 0.0h
-2025-04-26 19:19:15,468 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AAVEUSDT'}
-2025-04-26 19:19:15,832 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:16,333 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1INCHUSDT'}
-2025-04-26 19:19:16,570 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:16,571 - api.bybit_api - DEBUG - API call get_instruments_info successful in 236.40ms
-2025-04-26 19:19:16,572 - api.bybit_api - DEBUG - Using cached candle data for 1INCHUSDT (15), age: 0.0h
-2025-04-26 19:19:16,581 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1INCHUSDT'}
-2025-04-26 19:19:17,267 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:17,769 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AERGOUSDT'}
-2025-04-26 19:19:18,016 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:18,017 - api.bybit_api - DEBUG - API call get_instruments_info successful in 247.17ms
-2025-04-26 19:19:18,017 - api.bybit_api - DEBUG - Using cached candle data for AERGOUSDT (15), age: 0.0h
-2025-04-26 19:19:18,027 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AERGOUSDT'}
-2025-04-26 19:19:18,383 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:18,384 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000CATSUSDT'}
-2025-04-26 19:19:18,615 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:18,616 - api.bybit_api - DEBUG - API call get_instruments_info successful in 230.92ms
-2025-04-26 19:19:18,617 - api.bybit_api - DEBUG - Using cached candle data for 1000CATSUSDT (15), age: 0.0h
-2025-04-26 19:19:18,627 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000CATSUSDT'}
-2025-04-26 19:19:18,977 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:18,978 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000SATSUSDT'}
-2025-04-26 19:19:19,559 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:19,559 - api.bybit_api - DEBUG - API call get_instruments_info successful in 580.29ms
-2025-04-26 19:19:19,560 - api.bybit_api - DEBUG - Using cached candle data for 10000SATSUSDT (15), age: 0.0h
-2025-04-26 19:19:19,572 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000SATSUSDT'}
-2025-04-26 19:19:19,923 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:19,924 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'A8USDT'}
-2025-04-26 19:19:20,152 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:20,152 - api.bybit_api - DEBUG - API call get_instruments_info successful in 227.24ms
-2025-04-26 19:19:20,153 - api.bybit_api - DEBUG - Using cached candle data for A8USDT (15), age: 0.0h
-2025-04-26 19:19:20,164 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'A8USDT'}
-2025-04-26 19:19:20,490 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:20,491 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000TURBOUSDT'}
-2025-04-26 19:19:20,716 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:20,716 - api.bybit_api - DEBUG - API call get_instruments_info successful in 224.72ms
-2025-04-26 19:19:20,717 - api.bybit_api - DEBUG - Using cached candle data for 1000TURBOUSDT (15), age: 0.0h
-2025-04-26 19:19:20,728 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000TURBOUSDT'}
-2025-04-26 19:19:21,070 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:21,071 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000NEIROCTOUSDT'}
-2025-04-26 19:19:21,653 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:21,654 - api.bybit_api - DEBUG - API call get_instruments_info successful in 582.24ms
-2025-04-26 19:19:21,655 - api.bybit_api - DEBUG - Using cached candle data for 1000NEIROCTOUSDT (15), age: 0.0h
-2025-04-26 19:19:21,665 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000NEIROCTOUSDT'}
-2025-04-26 19:19:22,020 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:22,021 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000CATUSDT'}
-2025-04-26 19:19:22,612 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:22,613 - api.bybit_api - DEBUG - API call get_instruments_info successful in 589.81ms
-2025-04-26 19:19:22,613 - api.bybit_api - DEBUG - Using cached candle data for 1000CATUSDT (15), age: 0.0h
-2025-04-26 19:19:22,625 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000CATUSDT'}
-2025-04-26 19:19:22,965 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:22,966 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000QUBICUSDT'}
-2025-04-26 19:19:23,196 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:23,196 - api.bybit_api - DEBUG - API call get_instruments_info successful in 230.16ms
-2025-04-26 19:19:23,197 - api.bybit_api - DEBUG - Using cached candle data for 10000QUBICUSDT (15), age: 0.0h
-2025-04-26 19:19:23,209 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000QUBICUSDT'}
-2025-04-26 19:19:23,555 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:23,556 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000000BABYDOGEUSDT'}
-2025-04-26 19:19:24,126 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:24,126 - api.bybit_api - DEBUG - API call get_instruments_info successful in 570.52ms
-2025-04-26 19:19:24,127 - api.bybit_api - DEBUG - Using cached candle data for 1000000BABYDOGEUSDT (15), age: 0.0h
-2025-04-26 19:19:24,139 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000000BABYDOGEUSDT'}
-2025-04-26 19:19:24,496 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:24,497 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'AEVOUSDT'}
-2025-04-26 19:19:24,725 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:24,725 - api.bybit_api - DEBUG - API call get_instruments_info successful in 227.67ms
-2025-04-26 19:19:24,726 - api.bybit_api - DEBUG - Using cached candle data for AEVOUSDT (15), age: 0.0h
-2025-04-26 19:19:24,739 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'AEVOUSDT'}
-2025-04-26 19:19:25,066 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:25,067 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': 'ADAUSDT'}
-2025-04-26 19:19:25,292 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:25,293 - api.bybit_api - DEBUG - API call get_instruments_info successful in 224.37ms
-2025-04-26 19:19:25,294 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (15), age: 0.0h
-2025-04-26 19:19:25,304 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': 'ADAUSDT'}
-2025-04-26 19:19:25,635 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:26,137 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000000CHEEMSUSDT'}
-2025-04-26 19:19:26,381 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:26,381 - api.bybit_api - DEBUG - API call get_instruments_info successful in 242.68ms
-2025-04-26 19:19:26,384 - api.bybit_api - DEBUG - Using cached candle data for 1000000CHEEMSUSDT (15), age: 0.0h
-2025-04-26 19:19:26,395 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000000CHEEMSUSDT'}
-2025-04-26 19:19:26,741 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:26,742 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '10000LADYSUSDT'}
-2025-04-26 19:19:27,321 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:27,322 - api.bybit_api - DEBUG - API call get_instruments_info successful in 577.62ms
-2025-04-26 19:19:27,322 - api.bybit_api - DEBUG - Using cached candle data for 10000LADYSUSDT (15), age: 0.0h
-2025-04-26 19:19:27,334 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '10000LADYSUSDT'}
-2025-04-26 19:19:27,687 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:27,688 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear', 'symbol': '1000PEPEUSDT'}
-2025-04-26 19:19:28,264 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
-2025-04-26 19:19:28,264 - api.bybit_api - DEBUG - API call get_instruments_info successful in 576.25ms
-2025-04-26 19:19:28,265 - api.bybit_api - DEBUG - Using cached candle data for 1000PEPEUSDT (15), age: 0.0h
-2025-04-26 19:19:28,275 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/tickers with params: {'category': 'spot', 'symbol': '1000PEPEUSDT'}
-2025-04-26 19:19:28,621 - api.bybit_api - DEBUG - API request successful: GET /v5/market/tickers
-2025-04-26 19:19:28,623 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (15), age: 0.0h
-2025-04-26 19:19:28,634 - api.bybit_api - DEBUG - Using cached candle data for 1INCHUSDT (15), age: 0.0h
-2025-04-26 19:19:28,641 - api.bybit_api - DEBUG - Using cached candle data for ACHUSDT (15), age: 0.0h
-2025-04-26 19:19:28,648 - api.bybit_api - DEBUG - Using cached candle data for AAVEUSDT (15), age: 0.0h
-2025-04-26 19:19:28,657 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ADAUSDT', 'interval': '1', 'limit': 50}
-2025-04-26 19:19:29,020 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:19:29,021 - api.bybit_api - DEBUG - API response for ADAUSDT (1) received
-2025-04-26 19:19:29,024 - api.bybit_api - DEBUG - Candle data for ADAUSDT (1) saved to cache
-2025-04-26 19:19:29,042 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ADAUSDT', 'interval': '60', 'limit': 100}
-2025-04-26 19:19:29,378 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
-2025-04-26 19:19:29,378 - api.bybit_api - DEBUG - API response for ADAUSDT (60) received
-2025-04-26 19:19:29,382 - api.bybit_api - DEBUG - Candle data for ADAUSDT (60) saved to cache
-2025-04-26 19:19:29,391 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:19:29,395 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:20:29,430 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:20:29,454 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:20:29,457 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:21:29,490 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:21:29,504 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:21:29,507 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.0h
-2025-04-26 19:22:29,536 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:22:29,551 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:22:29,554 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:23:29,589 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:23:29,603 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:23:29,607 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:24:29,640 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:24:29,655 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:24:29,658 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:25:29,691 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:25:29,705 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:25:29,709 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:26:29,747 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:26:29,761 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:26:29,764 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:27:29,800 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:27:29,814 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
-2025-04-26 19:27:29,818 - api.bybit_api - DEBUG - Using cached candle data for ADAUSDT (1), age: 0.1h
+2025-04-26 19:47:08,346 - api.bybit_api - INFO - Bybit API initialized (testnet: True)
+2025-04-26 19:47:08,347 - api.bybit_api - INFO - Bybit API session created successfully
+2025-04-26 19:47:08,347 - api.bybit_api - INFO - Hole alle verfügbaren Symbole für Kategorie: linear
+2025-04-26 19:47:08,348 - api.bybit_api - DEBUG - Calling API: get_instruments_info with params: {'category': 'linear'}
+2025-04-26 19:47:08,985 - api.bybit_api - INFO - API GET to get_instruments_info completed: status=0, message=OK
+2025-04-26 19:47:08,985 - api.bybit_api - DEBUG - API call get_instruments_info successful in 636.80ms
+2025-04-26 19:47:08,986 - api.bybit_api - INFO - 500 Symbole erfolgreich abgerufen
+2025-04-26 19:47:09,721 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000000AIDOGEUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:10,086 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:10,086 - api.bybit_api - DEBUG - API response for 10000000AIDOGEUSDT (15) received
+2025-04-26 19:47:10,091 - api.bybit_api - DEBUG - Candle data for 10000000AIDOGEUSDT (15) saved to cache
+2025-04-26 19:47:11,222 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000BABYDOGEUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:11,935 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:11,936 - api.bybit_api - DEBUG - API response for 1000000BABYDOGEUSDT (15) received
+2025-04-26 19:47:11,939 - api.bybit_api - DEBUG - Candle data for 1000000BABYDOGEUSDT (15) saved to cache
+2025-04-26 19:47:12,753 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000CHEEMSUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:13,806 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:13,806 - api.bybit_api - DEBUG - API response for 1000000CHEEMSUSDT (15) received
+2025-04-26 19:47:13,810 - api.bybit_api - DEBUG - Candle data for 1000000CHEEMSUSDT (15) saved to cache
+2025-04-26 19:47:14,630 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000MOGUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:15,671 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:15,671 - api.bybit_api - DEBUG - API response for 1000000MOGUSDT (15) received
+2025-04-26 19:47:15,674 - api.bybit_api - DEBUG - Candle data for 1000000MOGUSDT (15) saved to cache
+2025-04-26 19:47:16,471 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000000PEIPEIUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:16,831 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:16,831 - api.bybit_api - DEBUG - API response for 1000000PEIPEIUSDT (15) received
+2025-04-26 19:47:16,834 - api.bybit_api - DEBUG - Candle data for 1000000PEIPEIUSDT (15) saved to cache
+2025-04-26 19:47:17,631 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000COQUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:18,351 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:18,351 - api.bybit_api - DEBUG - API response for 10000COQUSDT (15) received
+2025-04-26 19:47:18,354 - api.bybit_api - DEBUG - Candle data for 10000COQUSDT (15) saved to cache
+2025-04-26 19:47:19,519 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000ELONUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:19,866 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:19,866 - api.bybit_api - DEBUG - API response for 10000ELONUSDT (15) received
+2025-04-26 19:47:19,870 - api.bybit_api - DEBUG - Candle data for 10000ELONUSDT (15) saved to cache
+2025-04-26 19:47:20,658 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000LADYSUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:21,015 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:21,015 - api.bybit_api - DEBUG - API response for 10000LADYSUSDT (15) received
+2025-04-26 19:47:21,018 - api.bybit_api - DEBUG - Candle data for 10000LADYSUSDT (15) saved to cache
+2025-04-26 19:47:21,790 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000QUBICUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:22,150 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:22,151 - api.bybit_api - DEBUG - API response for 10000QUBICUSDT (15) received
+2025-04-26 19:47:22,154 - api.bybit_api - DEBUG - Candle data for 10000QUBICUSDT (15) saved to cache
+2025-04-26 19:47:22,939 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000SATSUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:23,305 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:23,306 - api.bybit_api - DEBUG - API response for 10000SATSUSDT (15) received
+2025-04-26 19:47:23,309 - api.bybit_api - DEBUG - Candle data for 10000SATSUSDT (15) saved to cache
+2025-04-26 19:47:27,086 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000WENUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:27,448 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:27,449 - api.bybit_api - DEBUG - API response for 10000WENUSDT (15) received
+2025-04-26 19:47:27,451 - api.bybit_api - DEBUG - Candle data for 10000WENUSDT (15) saved to cache
+2025-04-26 19:47:28,236 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '10000WHYUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:28,611 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:28,611 - api.bybit_api - DEBUG - API response for 10000WHYUSDT (15) received
+2025-04-26 19:47:28,615 - api.bybit_api - DEBUG - Candle data for 10000WHYUSDT (15) saved to cache
+2025-04-26 19:47:29,727 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000APUUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:30,114 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:30,115 - api.bybit_api - DEBUG - API response for 1000APUUSDT (15) received
+2025-04-26 19:47:30,118 - api.bybit_api - DEBUG - Candle data for 1000APUUSDT (15) saved to cache
+2025-04-26 19:47:30,891 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000BONKPERP', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:31,600 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:31,601 - api.bybit_api - DEBUG - API response for 1000BONKPERP (15) received
+2025-04-26 19:47:31,603 - api.bybit_api - DEBUG - Candle data for 1000BONKPERP (15) saved to cache
+2025-04-26 19:47:32,446 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000BONKUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:32,820 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:32,820 - api.bybit_api - DEBUG - API response for 1000BONKUSDT (15) received
+2025-04-26 19:47:32,823 - api.bybit_api - DEBUG - Candle data for 1000BONKUSDT (15) saved to cache
+2025-04-26 19:47:33,590 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000BTTUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:33,945 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:33,945 - api.bybit_api - DEBUG - API response for 1000BTTUSDT (15) received
+2025-04-26 19:47:33,950 - api.bybit_api - DEBUG - Candle data for 1000BTTUSDT (15) saved to cache
+2025-04-26 19:47:34,741 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000CATSUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:35,446 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:35,446 - api.bybit_api - DEBUG - API response for 1000CATSUSDT (15) received
+2025-04-26 19:47:35,450 - api.bybit_api - DEBUG - Candle data for 1000CATSUSDT (15) saved to cache
+2025-04-26 19:47:36,291 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000CATUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:37,340 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:37,341 - api.bybit_api - DEBUG - API response for 1000CATUSDT (15) received
+2025-04-26 19:47:37,344 - api.bybit_api - DEBUG - Candle data for 1000CATUSDT (15) saved to cache
+2025-04-26 19:47:38,131 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000FLOKIUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:38,482 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:38,483 - api.bybit_api - DEBUG - API response for 1000FLOKIUSDT (15) received
+2025-04-26 19:47:38,485 - api.bybit_api - DEBUG - Candle data for 1000FLOKIUSDT (15) saved to cache
+2025-04-26 19:47:39,626 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000LUNCUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:39,988 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:39,988 - api.bybit_api - DEBUG - API response for 1000LUNCUSDT (15) received
+2025-04-26 19:47:39,992 - api.bybit_api - DEBUG - Candle data for 1000LUNCUSDT (15) saved to cache
+2025-04-26 19:47:44,123 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000MUMUUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:44,840 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:44,841 - api.bybit_api - DEBUG - API response for 1000MUMUUSDT (15) received
+2025-04-26 19:47:44,844 - api.bybit_api - DEBUG - Candle data for 1000MUMUUSDT (15) saved to cache
+2025-04-26 19:47:45,669 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000NEIROCTOUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:46,045 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:46,045 - api.bybit_api - DEBUG - API response for 1000NEIROCTOUSDT (15) received
+2025-04-26 19:47:46,048 - api.bybit_api - DEBUG - Candle data for 1000NEIROCTOUSDT (15) saved to cache
+2025-04-26 19:47:47,162 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000PEPEPERP', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:47,520 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:47,521 - api.bybit_api - DEBUG - API response for 1000PEPEPERP (15) received
+2025-04-26 19:47:47,524 - api.bybit_api - DEBUG - Candle data for 1000PEPEPERP (15) saved to cache
+2025-04-26 19:47:48,294 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000PEPEUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:48,640 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:48,640 - api.bybit_api - DEBUG - API response for 1000PEPEUSDT (15) received
+2025-04-26 19:47:48,643 - api.bybit_api - DEBUG - Candle data for 1000PEPEUSDT (15) saved to cache
+2025-04-26 19:47:49,781 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000RATSUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:50,471 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:50,471 - api.bybit_api - DEBUG - API response for 1000RATSUSDT (15) received
+2025-04-26 19:47:50,477 - api.bybit_api - DEBUG - Candle data for 1000RATSUSDT (15) saved to cache
+2025-04-26 19:47:51,219 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000TOSHIUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:51,929 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:51,930 - api.bybit_api - DEBUG - API response for 1000TOSHIUSDT (15) received
+2025-04-26 19:47:51,933 - api.bybit_api - DEBUG - Candle data for 1000TOSHIUSDT (15) saved to cache
+2025-04-26 19:47:52,776 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000TURBOUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:53,135 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:53,136 - api.bybit_api - DEBUG - API response for 1000TURBOUSDT (15) received
+2025-04-26 19:47:53,139 - api.bybit_api - DEBUG - Candle data for 1000TURBOUSDT (15) saved to cache
+2025-04-26 19:47:53,902 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000XECUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:54,299 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:54,300 - api.bybit_api - DEBUG - API response for 1000XECUSDT (15) received
+2025-04-26 19:47:54,303 - api.bybit_api - DEBUG - Candle data for 1000XECUSDT (15) saved to cache
+2025-04-26 19:47:55,037 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1000XUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:55,401 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:55,402 - api.bybit_api - DEBUG - API response for 1000XUSDT (15) received
+2025-04-26 19:47:55,406 - api.bybit_api - DEBUG - Candle data for 1000XUSDT (15) saved to cache
+2025-04-26 19:47:56,188 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': '1INCHUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:47:56,545 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:47:56,546 - api.bybit_api - DEBUG - API response for 1INCHUSDT (15) received
+2025-04-26 19:47:56,549 - api.bybit_api - DEBUG - Candle data for 1INCHUSDT (15) saved to cache
+2025-04-26 19:48:00,321 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'A8USDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:00,680 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:00,680 - api.bybit_api - DEBUG - API response for A8USDT (15) received
+2025-04-26 19:48:00,683 - api.bybit_api - DEBUG - Candle data for A8USDT (15) saved to cache
+2025-04-26 19:48:01,466 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AAVEUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:01,824 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:01,825 - api.bybit_api - DEBUG - API response for AAVEUSDT (15) received
+2025-04-26 19:48:01,828 - api.bybit_api - DEBUG - Candle data for AAVEUSDT (15) saved to cache
+2025-04-26 19:48:02,619 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACEUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:02,985 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:02,986 - api.bybit_api - DEBUG - API response for ACEUSDT (15) received
+2025-04-26 19:48:02,989 - api.bybit_api - DEBUG - Candle data for ACEUSDT (15) saved to cache
+2025-04-26 19:48:03,770 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACHUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:04,144 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:04,145 - api.bybit_api - DEBUG - API response for ACHUSDT (15) received
+2025-04-26 19:48:04,148 - api.bybit_api - DEBUG - Candle data for ACHUSDT (15) saved to cache
+2025-04-26 19:48:05,260 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACTUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:05,620 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:05,620 - api.bybit_api - DEBUG - API response for ACTUSDT (15) received
+2025-04-26 19:48:05,623 - api.bybit_api - DEBUG - Candle data for ACTUSDT (15) saved to cache
+2025-04-26 19:48:06,735 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ACXUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:07,100 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:07,101 - api.bybit_api - DEBUG - API response for ACXUSDT (15) received
+2025-04-26 19:48:07,104 - api.bybit_api - DEBUG - Candle data for ACXUSDT (15) saved to cache
+2025-04-26 19:48:07,874 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ADAUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:08,230 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:08,230 - api.bybit_api - DEBUG - API response for ADAUSDT (15) received
+2025-04-26 19:48:08,233 - api.bybit_api - DEBUG - Candle data for ADAUSDT (15) saved to cache
+2025-04-26 19:48:09,355 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AERGOUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:09,799 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:09,800 - api.bybit_api - DEBUG - API response for AERGOUSDT (15) received
+2025-04-26 19:48:09,803 - api.bybit_api - DEBUG - Candle data for AERGOUSDT (15) saved to cache
+2025-04-26 19:48:10,591 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AEROUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:10,959 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:10,960 - api.bybit_api - DEBUG - API response for AEROUSDT (15) received
+2025-04-26 19:48:10,963 - api.bybit_api - DEBUG - Candle data for AEROUSDT (15) saved to cache
+2025-04-26 19:48:12,091 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AEVOPERP', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:12,470 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:12,471 - api.bybit_api - DEBUG - API response for AEVOPERP (15) received
+2025-04-26 19:48:12,474 - api.bybit_api - DEBUG - Candle data for AEVOPERP (15) saved to cache
+2025-04-26 19:48:16,256 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AEVOUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:16,609 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:16,610 - api.bybit_api - DEBUG - API response for AEVOUSDT (15) received
+2025-04-26 19:48:16,613 - api.bybit_api - DEBUG - Candle data for AEVOUSDT (15) saved to cache
+2025-04-26 19:48:17,743 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AGIUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:18,110 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:18,110 - api.bybit_api - DEBUG - API response for AGIUSDT (15) received
+2025-04-26 19:48:18,115 - api.bybit_api - DEBUG - Candle data for AGIUSDT (15) saved to cache
+2025-04-26 19:48:18,877 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AGLDUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:19,222 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:19,222 - api.bybit_api - DEBUG - API response for AGLDUSDT (15) received
+2025-04-26 19:48:19,225 - api.bybit_api - DEBUG - Candle data for AGLDUSDT (15) saved to cache
+2025-04-26 19:48:20,013 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AI16ZUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:21,064 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:21,065 - api.bybit_api - DEBUG - API response for AI16ZUSDT (15) received
+2025-04-26 19:48:21,068 - api.bybit_api - DEBUG - Candle data for AI16ZUSDT (15) saved to cache
+2025-04-26 19:48:21,864 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AIOZUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:22,230 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:22,230 - api.bybit_api - DEBUG - API response for AIOZUSDT (15) received
+2025-04-26 19:48:22,233 - api.bybit_api - DEBUG - Candle data for AIOZUSDT (15) saved to cache
+2025-04-26 19:48:22,992 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AIUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:23,397 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:23,397 - api.bybit_api - DEBUG - API response for AIUSDT (15) received
+2025-04-26 19:48:23,400 - api.bybit_api - DEBUG - Candle data for AIUSDT (15) saved to cache
+2025-04-26 19:48:24,222 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AIXBTUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:24,579 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:24,579 - api.bybit_api - DEBUG - API response for AIXBTUSDT (15) received
+2025-04-26 19:48:24,582 - api.bybit_api - DEBUG - Candle data for AIXBTUSDT (15) saved to cache
+2025-04-26 19:48:25,370 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'AKTUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:25,739 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:25,740 - api.bybit_api - DEBUG - API response for AKTUSDT (15) received
+2025-04-26 19:48:25,742 - api.bybit_api - DEBUG - Candle data for AKTUSDT (15) saved to cache
+2025-04-26 19:48:26,517 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ALCHUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:26,874 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:26,875 - api.bybit_api - DEBUG - API response for ALCHUSDT (15) received
+2025-04-26 19:48:26,877 - api.bybit_api - DEBUG - Candle data for ALCHUSDT (15) saved to cache
+2025-04-26 19:48:27,656 - api.bybit_api - DEBUG - Making API request: GET https://api-testnet.bybit.com/v5/market/kline with params: {'symbol': 'ALEOUSDT', 'interval': '15', 'limit': 1000}
+2025-04-26 19:48:28,009 - api.bybit_api - DEBUG - API request successful: GET /v5/market/kline
+2025-04-26 19:48:28,010 - api.bybit_api - DEBUG - API response for ALEOUSDT (15) received
+2025-04-26 19:48:28,013 - api.bybit_api - DEBUG - Candle data for ALEOUSDT (15) saved to cache

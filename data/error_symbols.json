@@ -1,0 +1,278 @@
+{
+  "AIXBTUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:48.606419",
+    "last_error_time": "2025-04-26T19:18:48.606419",
+    "last_error": "no_ticker_data"
+  },
+  "AEVOPERP": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:49.273106",
+    "last_error_time": "2025-04-26T19:18:49.273106",
+    "last_error": "no_ticker_data"
+  },
+  "1000PEPEPERP": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:49.966107",
+    "last_error_time": "2025-04-26T19:18:49.966107",
+    "last_error": "no_ticker_data"
+  },
+  "AGIUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:50.645934",
+    "last_error_time": "2025-04-26T19:18:50.645934",
+    "last_error": "no_ticker_data"
+  },
+  "1000XECUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:51.313436",
+    "last_error_time": "2025-04-26T19:18:51.313436",
+    "last_error": "no_ticker_data"
+  },
+  "1000XUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:52.255676",
+    "last_error_time": "2025-04-26T19:18:52.255676",
+    "last_error": "no_ticker_data"
+  },
+  "10000WHYUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:52.907620",
+    "last_error_time": "2025-04-26T19:18:52.907620",
+    "last_error": "no_ticker_data"
+  },
+  "1000BONKUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:53.571418",
+    "last_error_time": "2025-04-26T19:18:53.571418",
+    "last_error": "no_ticker_data"
+  },
+  "AIUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:54.554800",
+    "last_error_time": "2025-04-26T19:18:54.554800",
+    "last_error": "no_ticker_data"
+  },
+  "AKTUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:55.215614",
+    "last_error_time": "2025-04-26T19:18:55.215614",
+    "last_error": "no_ticker_data"
+  },
+  "1000FLOKIUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:56.205985",
+    "last_error_time": "2025-04-26T19:18:56.205985",
+    "last_error": "no_ticker_data"
+  },
+  "10000WENUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:57.215637",
+    "last_error_time": "2025-04-26T19:18:57.215637",
+    "last_error": "no_ticker_data"
+  },
+  "1000TOSHIUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:57.899608",
+    "last_error_time": "2025-04-26T19:18:57.899608",
+    "last_error": "no_ticker_data"
+  },
+  "AEROUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:58.595986",
+    "last_error_time": "2025-04-26T19:18:58.595986",
+    "last_error": "no_ticker_data"
+  },
+  "ACEUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:18:59.608436",
+    "last_error_time": "2025-04-26T19:18:59.608436",
+    "last_error": "no_ticker_data"
+  },
+  "1000RATSUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:00.282428",
+    "last_error_time": "2025-04-26T19:19:00.282428",
+    "last_error": "no_ticker_data"
+  },
+  "10000COQUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:01.294756",
+    "last_error_time": "2025-04-26T19:19:01.294756",
+    "last_error": "no_ticker_data"
+  },
+  "1000000PEIPEIUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:01.962258",
+    "last_error_time": "2025-04-26T19:19:01.962258",
+    "last_error": "no_ticker_data"
+  },
+  "1000APUUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:02.618183",
+    "last_error_time": "2025-04-26T19:19:02.618183",
+    "last_error": "no_ticker_data"
+  },
+  "ACTUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:03.281639",
+    "last_error_time": "2025-04-26T19:19:03.281639",
+    "last_error": "no_ticker_data"
+  },
+  "AI16ZUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:04.227749",
+    "last_error_time": "2025-04-26T19:19:04.227749",
+    "last_error": "no_ticker_data"
+  },
+  "1000000MOGUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:04.851628",
+    "last_error_time": "2025-04-26T19:19:04.851628",
+    "last_error": "no_ticker_data"
+  },
+  "1000BONKPERP": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:05.798550",
+    "last_error_time": "2025-04-26T19:19:05.798550",
+    "last_error": "no_ticker_data"
+  },
+  "ACXUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:07.076458",
+    "last_error_time": "2025-04-26T19:19:07.076458",
+    "last_error": "no_ticker_data"
+  },
+  "1000LUNCUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:07.672662",
+    "last_error_time": "2025-04-26T19:19:07.672662",
+    "last_error": "no_ticker_data"
+  },
+  "AGLDUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:08.256062",
+    "last_error_time": "2025-04-26T19:19:08.256062",
+    "last_error": "no_ticker_data"
+  },
+  "10000ELONUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:08.845497",
+    "last_error_time": "2025-04-26T19:19:08.845497",
+    "last_error": "no_ticker_data"
+  },
+  "1000BTTUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:09.440629",
+    "last_error_time": "2025-04-26T19:19:09.440629",
+    "last_error": "no_ticker_data"
+  },
+  "AIOZUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:10.037845",
+    "last_error_time": "2025-04-26T19:19:10.037845",
+    "last_error": "no_ticker_data"
+  },
+  "ALEOUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:10.960307",
+    "last_error_time": "2025-04-26T19:19:10.960307",
+    "last_error": "no_ticker_data"
+  },
+  "ALCHUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:13.323640",
+    "last_error_time": "2025-04-26T19:19:13.323640",
+    "last_error": "no_ticker_data"
+  },
+  "10000000AIDOGEUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:14.266441",
+    "last_error_time": "2025-04-26T19:19:14.266441",
+    "last_error": "no_ticker_data"
+  },
+  "1000MUMUUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:15.218554",
+    "last_error_time": "2025-04-26T19:19:15.218554",
+    "last_error": "no_ticker_data"
+  },
+  "AERGOUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:18.384570",
+    "last_error_time": "2025-04-26T19:19:18.384570",
+    "last_error": "no_ticker_data"
+  },
+  "1000CATSUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:18.978449",
+    "last_error_time": "2025-04-26T19:19:18.978449",
+    "last_error": "no_ticker_data"
+  },
+  "10000SATSUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:19.924320",
+    "last_error_time": "2025-04-26T19:19:19.924320",
+    "last_error": "no_ticker_data"
+  },
+  "A8USDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:20.491760",
+    "last_error_time": "2025-04-26T19:19:20.491760",
+    "last_error": "no_ticker_data"
+  },
+  "1000TURBOUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:21.071490",
+    "last_error_time": "2025-04-26T19:19:21.071490",
+    "last_error": "no_ticker_data"
+  },
+  "1000NEIROCTOUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:22.021923",
+    "last_error_time": "2025-04-26T19:19:22.021923",
+    "last_error": "no_ticker_data"
+  },
+  "1000CATUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:22.966634",
+    "last_error_time": "2025-04-26T19:19:22.966634",
+    "last_error": "no_ticker_data"
+  },
+  "10000QUBICUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:23.556420",
+    "last_error_time": "2025-04-26T19:19:23.556420",
+    "last_error": "no_ticker_data"
+  },
+  "1000000BABYDOGEUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:24.497737",
+    "last_error_time": "2025-04-26T19:19:24.497737",
+    "last_error": "no_ticker_data"
+  },
+  "AEVOUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:25.067516",
+    "last_error_time": "2025-04-26T19:19:25.067516",
+    "last_error": "no_ticker_data"
+  },
+  "1000000CHEEMSUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:26.742964",
+    "last_error_time": "2025-04-26T19:19:26.742964",
+    "last_error": "no_ticker_data"
+  },
+  "10000LADYSUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:27.688409",
+    "last_error_time": "2025-04-26T19:19:27.688409",
+    "last_error": "no_ticker_data"
+  },
+  "1000PEPEUSDT": {
+    "error_count": 1,
+    "first_error_time": "2025-04-26T19:19:28.622399",
+    "last_error_time": "2025-04-26T19:19:28.622399",
+    "last_error": "no_ticker_data"
+  }
+}
