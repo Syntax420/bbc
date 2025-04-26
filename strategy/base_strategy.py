@@ -2,46 +2,215 @@ import logging
 import os
 import time
 import pandas as pd
+import numpy as np
 from abc import ABC, abstractmethod
-from typing import Dict, List, Tuple, Any, Optional
+from typing import Dict, List, Tuple, Any, Optional, Union
 import traceback
+from datetime import datetime
+from utils.decorators import handle_errors, log_execution_time
 
 from api.bybit_api import BybitAPI
 
 class BaseStrategy(ABC):
     """
-    Abstrakte Basisklasse für alle Trading-Strategien.
+    Basisklasse für Trading-Strategien
     
-    Diese Klasse definiert die grundlegende Schnittstelle und Funktionalität,
-    die von allen konkreten Strategien implementiert werden muss.
+    Alle Strategien sollten von dieser Klasse erben und die abstrakten Methoden implementieren
     """
-    
-    def __init__(self, api: BybitAPI, config: Dict):
+    def __init__(self, name: str = "BaseStrategy", timeframe: str = "15m"):
         """
-        Initialisiert die Basisstrategie mit API-Zugriff und Konfiguration
+        Initialisiert die Strategie
         
         Args:
-            api: BybitAPI-Instanz für Marktdaten und Order-Ausführung
-            config: Konfigurationswörterbuch
+            name: Name der Strategie
+            timeframe: Zeitrahmen für die Analyse
         """
-        self.api = api
-        self.config = config
-        self.name = self.__class__.__name__
+        self.name = name
+        self.timeframe = timeframe
+        self.logger = logging.getLogger(f"strategy.{name.lower()}")
+        self.indicators = {}  # Zwischenspeicher für berechnete Indikatoren
+        self.cached_signals = {}  # Cache für berechnete Signale
+        self.last_update_time = {}  # Letzte Aktualisierungszeit pro Symbol
         
-        # Logger mit Strategie-Namen erstellen
-        self.logger = logging.getLogger(f"strategy.{self.name.lower()}")
+        self.logger.info(f"{self.name} Strategie initialisiert mit Timeframe {timeframe}")
+    
+    @abstractmethod
+    def calculate_indicators(self, df: pd.DataFrame) -> Dict[str, Any]:
+        """
+        Berechnet technische Indikatoren auf den Daten
         
-        # Default-Werte
-        self.cache_dir = config.get("general", {}).get("cache_directory", "cache")
-        self.cache_enabled = config.get("general", {}).get("cache_enabled", True)
-        self.max_cache_age = config.get("general", {}).get("max_cache_age_minutes", 60)
-        
-        # Stellen Sie sicher, dass das Cache-Verzeichnis existiert
-        if self.cache_enabled and not os.path.exists(self.cache_dir):
-            os.makedirs(self.cache_dir)
+        Args:
+            df: DataFrame mit OHLCV-Daten
             
-        self.logger.info(f"{self.name} Strategie initialisiert")
+        Returns:
+            Dictionary mit berechneten Indikatoren
+        """
+        pass
+    
+    @abstractmethod
+    def generate_signals(self, df: pd.DataFrame, indicators: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Generiert Handelssignale basierend auf Indikatoren
         
+        Args:
+            df: DataFrame mit OHLCV-Daten
+            indicators: Dictionary mit berechneten Indikatoren
+            
+        Returns:
+            Dictionary mit Signalen (z.B. {'signal': 'buy', 'strength': 0.8})
+        """
+        pass
+    
+    @handle_errors
+    @log_execution_time()
+    def analyze(self, df: pd.DataFrame, symbol: str = "UNKNOWN") -> Dict[str, Any]:
+        """
+        Analysiert Daten und generiert Handelssignale
+        
+        Args:
+            df: DataFrame mit OHLCV-Daten
+            symbol: Trading-Symbol für bessere Protokollierung
+            
+        Returns:
+            Dictionary mit Analyse-Ergebnissen
+        """
+        if df.empty:
+            self.logger.warning(f"Leerer DataFrame für {symbol}, keine Analyse möglich")
+            return {
+                "signal": "neutral",
+                "strength": 0.0,
+                "indicators": {},
+                "timestamp": datetime.now().isoformat(),
+                "symbol": symbol,
+                "timeframe": self.timeframe,
+                "strategy": self.name
+            }
+            
+        # Prüfe, ob Mindestdaten vorhanden sind
+        min_required_candles = self.get_min_required_candles()
+        if len(df) < min_required_candles:
+            self.logger.warning(f"Zu wenig Daten für {symbol}: {len(df)} vorhanden, {min_required_candles} erforderlich")
+            return {
+                "signal": "neutral",
+                "strength": 0.0,
+                "indicators": {},
+                "timestamp": datetime.now().isoformat(),
+                "symbol": symbol,
+                "timeframe": self.timeframe,
+                "strategy": self.name,
+                "error": f"Zu wenig Daten: {len(df)} vorhanden, {min_required_candles} erforderlich"
+            }
+            
+        # Kopiere DataFrame um Änderungen am Original zu vermeiden
+        df = df.copy()
+        
+        # Sortiere nach Zeit (absteigend für neueste Daten zuerst)
+        if "timestamp" in df.columns:
+            df = df.sort_values("timestamp", ascending=False)
+            
+        # Berechne Indikatoren
+        indicators = self.calculate_indicators(df)
+        
+        # Speichere Indikatoren im Cache
+        self.indicators[symbol] = indicators
+        
+        # Generiere Signale
+        signals = self.generate_signals(df, indicators)
+        
+        # Speichere Signale im Cache
+        self.cached_signals[symbol] = signals
+        self.last_update_time[symbol] = datetime.now()
+        
+        # Kombiniere Ergebnisse
+        result = {
+            "signal": signals.get("signal", "neutral"),
+            "strength": signals.get("strength", 0.0),
+            "indicators": indicators,
+            "timestamp": datetime.now().isoformat(),
+            "symbol": symbol,
+            "timeframe": self.timeframe,
+            "strategy": self.name
+        }
+        
+        # Protokolliere das Ergebnis
+        signal_str = result["signal"]
+        strength_str = f"{result['strength']:.2f}" if isinstance(result['strength'], (float, int)) else result['strength']
+        self.logger.info(f"Analyse für {symbol} ({self.timeframe}): Signal={signal_str}, Stärke={strength_str}")
+        
+        return result
+    
+    def get_min_required_candles(self) -> int:
+        """
+        Gibt die Mindestanzahl an Kerzen zurück, die für die Strategie benötigt werden
+        
+        Returns:
+            Mindestanzahl an Kerzen
+        """
+        # Standardwert, sollte von Unterklassen überschrieben werden
+        return 20
+    
+    def get_recommended_symbols(self) -> List[str]:
+        """
+        Gibt eine Liste von empfohlenen Symbolen für diese Strategie zurück
+        
+        Returns:
+            Liste von empfohlenen Symbolen
+        """
+        # Standardwert, sollte von Unterklassen überschrieben werden
+        return ["BTCUSDT", "ETHUSDT"]
+    
+    def should_update(self, symbol: str, max_age_seconds: int = 300) -> bool:
+        """
+        Prüft, ob die gecachten Daten für ein Symbol aktualisiert werden sollten
+        
+        Args:
+            symbol: Trading-Symbol
+            max_age_seconds: Maximales Alter in Sekunden
+            
+        Returns:
+            True, wenn die Daten aktualisiert werden sollten, sonst False
+        """
+        if symbol not in self.last_update_time:
+            return True
+            
+        time_diff = (datetime.now() - self.last_update_time[symbol]).total_seconds()
+        return time_diff >= max_age_seconds
+    
+    def get_cached_signal(self, symbol: str) -> Optional[Dict[str, Any]]:
+        """
+        Ruft das gecachte Signal für ein Symbol ab
+        
+        Args:
+            symbol: Trading-Symbol
+            
+        Returns:
+            Gecachtes Signal oder None, wenn nicht vorhanden
+        """
+        return self.cached_signals.get(symbol)
+    
+    def clear_cache(self, symbol: Optional[str] = None) -> None:
+        """
+        Löscht den Cache für ein Symbol oder alle Symbole
+        
+        Args:
+            symbol: Trading-Symbol oder None für alle Symbole
+        """
+        if symbol:
+            if symbol in self.indicators:
+                del self.indicators[symbol]
+            if symbol in self.cached_signals:
+                del self.cached_signals[symbol]
+            if symbol in self.last_update_time:
+                del self.last_update_time[symbol]
+                
+            self.logger.debug(f"Cache für {symbol} gelöscht")
+        else:
+            self.indicators = {}
+            self.cached_signals = {}
+            self.last_update_time = {}
+            
+            self.logger.debug("Gesamter Cache gelöscht")
+    
     def fetch_candles(self, symbol: str, interval: str = "15", limit: int = 200) -> pd.DataFrame:
         """
         Fetch candlestick data and return as a pandas dataframe
@@ -160,22 +329,6 @@ class BaseStrategy(ABC):
             self.logger.error(traceback.format_exc())
             return pd.DataFrame()
     
-    @abstractmethod
-    def analyze(self, symbol: str, interval: str = "15", limit: int = 100) -> Dict:
-        """
-        Abstrakte Methode zur Analyse eines Symbols und Generierung von Handelssignalen
-        Muss von allen Unterklassen implementiert werden
-        
-        Args:
-            symbol: Trading-Paar-Symbol
-            interval: Zeitrahmen-Intervall
-            limit: Anzahl der zu analysierenden Kerzen
-            
-        Returns:
-            Dictionary mit Analyseergebnissen und Signalen
-        """
-        pass
-        
     @abstractmethod
     def get_strategy_parameters(self) -> Dict:
         """
